@@ -1,0 +1,813 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: arial,sans-serif;
+}
+a 
+{
+	text-decoration: none;
+}
+
+@font-face {
+    font-family: 'TrajanProBold';
+    src: url('fonts/TrajanProBold.eot');
+    src: url('fonts/TrajanProBold.eot') format('embedded-opentype'),
+         url('fonts/TrajanProBold.woff2') format('woff2'),
+         url('fonts/TrajanProBold.woff') format('woff'),
+         url('fonts/TrajanProBold.ttf') format('truetype'),
+         url('fonts/TrajanProBold.svg#TrajanProBold') format('svg');
+}
+
+
+
+
+
+
+#wrapper
+{
+	background: url("../imagini/background-title.jpg");
+	height: 499px;
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px;
+	position: relative;
+}
+#site
+{
+	margin: 0px auto;
+	padding: 0px;
+	width: 980px;
+}
+#alltop
+{
+	margin: 0px auto;
+	padding: 0px;
+	width: 980px;
+	text-align: left;
+	display: block;
+	clear: both;
+}
+#toppage
+{
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px;
+	text-align: left;
+	float: left;
+	display: block;
+}
+#logo
+{
+	display: block;
+	float: left;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+	height: 139px;
+	width: 171px;
+}
+#logo a img 
+{
+	position: absolute;
+	margin-top: 10px;
+}
+.all-right-top
+{
+	float: right;
+	width: 800px;
+	height: 150px;
+}
+.right
+{
+	float: right;
+	padding-right: 10px;
+}
+.flags 
+{
+	text-align: right;
+	padding: 0px;
+	
+	display: inline-block;
+}
+.clear
+{
+	clear: both;
+}
+.righttop 
+{
+	display: inline-block;
+	float: right;
+	text-align: right;
+	padding: 0px;
+	margin: 10px 0 0 0;
+}
+.flagslist
+{
+	display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+.flagslist li
+{
+	float: left;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.flagslist li:first-child
+{
+	padding-right: 5px;
+}
+.topmenu 
+{
+	font-family: 'TrajanProBold';
+	display: inline-block;
+    margin: 10px;
+    padding: 0px;
+}
+
+.topmenu li 
+{
+	 float: left;
+     list-style-type: none;
+     padding:0px 10px;
+     font-size: 12px;
+     text-decoration: none;
+}
+.topmenu li:first-letter
+{
+	font-size: 120%;
+}
+.topmenu li a 
+{
+   color: #FFF;
+}
+.topmenu .lastflag{ 
+	padding-right: 0px;
+}
+.top-social
+{
+	width: 100%;
+	float: right;
+	text-align: right;
+	padding: 0px;
+	display: block;
+	margin: 5px 0 0 0;
+}
+.top-social ul 
+{
+	float: right;
+	text-align: right;
+	padding: 0px;
+	clear: both;
+	display: block;
+	margin: 5px 0;
+}
+.top-social li 
+{
+	display: inline-block;
+	padding: 0px;
+	margin: 0px 0 0 5px;
+	float: left;
+	text-align: left;
+}
+.top-menu
+{
+	float: right;
+	text-align: right;
+	width: 100%;
+	display: block;
+	padding: 0px;
+	margin: 10px 0 0px 0;
+}
+.top-menu ul 
+{
+	float: right;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	list-style: none;
+}
+.top-menu ul li 
+{
+	font-family: 'TrajanProBold';
+	float: left;
+	padding: 4px 15px;
+	margin: 0px 0 15px 0;
+	display: inline;
+	list-style: none;
+	font-size: 18px;
+	position: relative;
+}
+.top-menu ul li::first-letter
+{
+	font-size: 120%;
+}
+.top-menu ul .cerculet
+{
+	background: #e9f3ff;
+	border-radius: 10px;
+	box-shadow: #3065b3;
+}
+.top-menu ul .cerculet a 
+{
+	color: #2577ee;
+}
+.top-menu ul li:last-child
+{
+	padding-right: 10px;
+}
+.top-menu ul li a 
+{
+	color: #FFF;
+}
+.top-menu ul li:hover 
+{
+	background: #e9f3ff;
+	border-radius: 10px;
+	width: 
+}
+.top-menu ul li:hover a 
+{
+	color: #2577ee;
+}
+.main-image
+{
+	border-bottom: 0px;
+	width: 978px;
+}
+.main-image .copii img:last-child
+{
+	height: 60px;
+	margin-top: -40px;
+    z-index: -1;
+    position: relative;
+}
+.all-text
+{
+	float: left;
+	text-align: left;
+	display: block;
+	width: 100%;
+	clear: both;
+	background: #FFF;
+	margin: 0px;
+	padding: 0px;
+}
+.left-text
+{
+	float: left;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	width: 700px;
+}
+.upper-text
+{
+	float: left;
+	text-align: left;
+	display: block;
+	width: 100%;
+	clear: both;
+}
+.upper-text h2
+{
+	font-weight: bold;
+    color: #343b54;
+	font-family: 'TrajanProBold';
+	float: left;
+	text-align: left;
+	clear: both;
+	width: 670px;
+	font-size: 18px;
+	margin: 20px 0 10px 0;
+	padding: 0px 0 10px 0;
+	background: url("../imagini/liniuta.png") repeat-x left bottom;
+}
+.upper-text p 
+{
+	float: left;
+    color: #343b54;
+	font-family: arial;
+	text-align: left;
+	clear: both;
+	width: 100%;
+	font-size: 14px;
+	margin: 0px 0 20px 0;
+	padding: 0px;
+}
+.upper-text .btn
+{
+	background: #196feb;
+	border-radius: 60px;
+	padding: 5px;
+	color: #FFF;
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+.bottom-left
+{
+	float: left;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+	width: 100%;
+}
+.left-box
+{
+	width: 330px;
+	display: block;
+    text-align: left;
+    float: left;
+    margin: 0px;
+    padding: 0px 0 0 8px;
+}
+.left-box h2
+{
+	float: left;
+	font-weight: bold;
+    color: #343b54;
+	font-family: 'TrajanProBold';
+    text-align: left;
+    width: 100%;
+    clear: both;
+    margin: 0px 0 15px 0;
+	padding: 0px 0 15px 0;
+    font-size: 18px;
+    background: url("../imagini/liniuta.png") repeat-x left bottom;
+}
+.left-box p 
+{
+    color: #343b54;
+    text-align: left;
+    width: 100%;
+    vertical-align: top;
+    margin: 0px;
+    font-size: 12px;
+    line-height: 19px;
+}
+.left-box a.btn
+{
+	background: #196feb;
+	border-radius: 60px;
+	padding: 5px;
+	color: #FFF;
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 15px;
+	display: inline-block;
+}
+.left-box img 
+{
+	float: left;
+	padding-right: 10px;
+}
+.right-box
+{
+	float: right;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	width: 330px;
+}
+.right-box h2
+{
+	font-weight: bold;
+    color: #343b54;
+	float: left;
+	font-family: 'TrajanProBold';
+	text-align: left;
+	display: block;
+	width: 313px;
+	font-size: 18px;
+	clear: both;
+	margin: 0px 0 15px 0;
+	padding: 0px 0 15px 0;
+	background: url("../imagini/liniuta.png") repeat-x left bottom;
+}
+.right-box ul 
+{
+	float: left;
+	text-align: left;
+	padding: 5px 5px;
+	margin: 0 0 15px 0;
+	clear: both;
+	display: block;
+	list-style: none;
+	background: #f2f8ff;
+}
+.right-box ul li 
+{
+	float: left;
+	text-align: left;
+	padding: 0px 5px;
+	margin: 10px 0 10px 0;
+	font-size: 13px;
+	border-right: 1px solid #c7c7c7;
+	font-weight: bold;
+	font-size: 12px;
+}
+.right-box ul li a 
+{
+	color: blue;
+}
+.right-box ul li:last-child
+{
+	border-right: none;
+}
+.right-box p 
+{
+    color: #343b54;
+	font-size: 12px;
+	margin: 0px;
+	width: 303px;
+	vertical-align: top;
+	float: left;
+	text-align: left;
+	line-height: 15px;
+}
+.box-top .btn
+{
+	background: #196feb;
+	border-radius: 60px;
+	padding: 5px;
+	color: #FFF;
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 15px;
+	display: inline-block;
+}
+.box-bottom h2
+{
+	font-size: 15px;
+	font-weight: bold;
+    color: #343b54;
+	font-family: 'TrajanProBold';
+	margin: 20px 0 20px 0;
+	border: 0px;
+	background: url("../imagini/liniuta.png") repeat-x left bottom;
+}
+.box-bottom p 
+{
+    color: #343b54;
+	font-weight: bold;
+	border-bottom: 1px solid #eaebee;
+	padding: 5px 0px;
+}
+.box-bottom .none
+{
+	border-bottom: none;
+}
+.rightmargin
+{
+	float: right;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+	vertical-align: top;
+	display: block;
+	width: 270px;
+}
+.top-right
+{
+	float: left;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+	clear: both;
+	width: 100%;
+}
+.top-right img 
+{
+	height: 116px;
+	width: 247px;
+	margin: 0 0 0 16px
+}
+.top-right h2
+{
+	font-weight: bold;
+    color: #343b54;
+	font-size: 15px;
+	margin: 20px 0 16px 16px;
+	font-family: 'TrajanProBold';
+}
+.top-right .lin 
+{
+	font-family: 'TrajanProBold';
+	background: url("../imagini/liniuta.png") repeat-x left bottom;
+	margin: 20px 0 0 16px;
+	padding: 0px 0 15px 0;
+	width: 226px;
+}
+.top-right ul
+{
+	float: left;
+	text-align: left;
+	list-style: none;
+	display: block;
+	clear: both;
+	margin: 10px 0 0 15px;
+	padding: 10px 0px;
+	background: #f2f8ff;
+	width: 250px;
+}
+.top-right ul li 
+{
+	float: left;
+	text-align: left;
+	padding: 0px 5px;
+	margin: 0px;
+	font-size: 13px;
+	border-right: 1px solid #c7c7c7;
+}
+.top-right ul li a 
+{
+	color: blue;
+	font-weight: bold;
+}
+.top-right ul li:last-child
+{
+	border-right: none;
+}
+.top-right p 
+{
+	font-size: 13px;
+	float: left;
+	text-align: left;
+	padding: 0;
+	margin: 16px 0 0 16px;
+	line-height: 15px;
+}
+.calendar img 
+{
+	width: 230px;
+	margin: 0px 0 0 16px;
+	padding: 0px;
+	float: left;
+}
+.end
+{
+	background-color: #d4e8ff;
+	margin: 0px;
+	width: 100%;
+	position: relative;
+	height: auto;
+	padding: 0px;
+	z-index: 1;
+	float: left;
+	min-height: 160px;
+}
+.end2
+{
+	margin: 0px auto;
+	text-align: left;
+	display: block;
+	width: 965px;
+	display: block;
+    clear: both;
+    background-color: #e9f3ff;
+    border: 10px solid #FFF;
+    padding: 0px;
+}
+.sub-patronat
+{
+	float: left;
+	width: 965px;
+}
+.sub-patronat ul
+{
+	margin: 0px auto;
+	padding: 0px;
+	display: block;
+	list-style: none;
+	clear: both;
+	text-align: center;
+	position: relative;
+}
+.sub-patronat ul .sub span 
+{
+	display: inline-block;
+	padding: 0px;
+	margin: 0px 0 30px 0;
+	font-family: 'TrajanProBold';
+	font-size: 14px;
+}
+.sub-patronat ul li img 
+{
+	background-color: #e9f3ff;
+}
+.sub-patronat ul
+{
+	padding-top: 10px;
+}
+.sub-patronat ul li 
+{
+	float: left;
+	padding: 0 20px 0 0;
+	position: relative;
+	margin: 0px ;
+}
+
+.sub-patronat ul li a{
+	display: inline-block;
+}
+.sub-patronat ul .sub
+{
+	margin: 0px 0 0 31px;
+	top: 30px;
+	left: 0px;
+	position: relative;
+	padding: 0px 40px 0 0;
+	font-size: 14px;
+	font-family: 'TrajanProBold';
+	font-size: 14px;
+}
+.leftcolum
+{
+	float: left;
+	display: block;
+	width: 144px;
+	height: 149px;
+	position: absolute;
+	background: url("../imagini/colum2.png");
+	top: 0px;
+	left: 0px;
+}
+.rightcolum
+{
+	background: url("../imagini/colum2.png");
+	display: block;
+	width: 144px;
+	height: 149px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	float: right;
+}
+.jos-de-tot
+{
+	margin: 0px auto;
+	width: 986px;
+    text-align: left;
+    padding: 10px 0;
+    display: block;
+}
+.jos-stanga
+{
+	width: auto;
+	float: left;
+	text-align: left;
+	padding: 0px;
+	margin: 5px 0 0 0;
+	display: inline-block;
+}
+.jos-stanga ul 
+{
+	float: left;
+	text-align: left;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	clear: both;
+	display: block;
+	width: 100%;
+	list-style: none;
+	font-size: 12px;
+	font-family: arial bold;
+}
+.jos-stanga ul li 
+{
+	display: inline;
+	padding: 0 15px 0 15px;
+	font-weight: bold;
+	border-right: 1px solid #81b1f6;
+	float: left;
+	text-align: left;
+	font-size: 12px;
+}
+.jos-stanga ul li a 
+{
+	color: black;
+}
+.jos-stanga ul .down
+{
+	border-right: none;
+}
+.jos-dreapta
+{
+	width: 400px;
+	float: right;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+}
+.jos-dreapta ul 
+{
+	width: 125px;
+	list-style: none;
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	text-align: right;
+}
+.jos-dreapta ul li 
+{
+	display: inline-block;
+	padding: 0px 5px 0 0;
+	line-height: 9px;
+}
+.jos-dreapta .final
+{
+	display: inline;
+	float: right;
+	width: 240px;
+	margin: 5px 35px 0 0;
+}
+.jos-dreapta .final li 
+{
+	border-right: 1px solid #81b1f6;
+}
+.jos-dreapta .final li a 
+{
+	color: #92a0b6;
+	font-size: 12px;
+}
+.input
+{
+	float: right;
+	text-align: right;
+	padding: 0px;
+	margin: 10px;
+}
+.input span 
+{
+	    float: left;
+        margin-bottom: 8px;
+        font-family: 'TrajanProBold';
+}
+.input .ab
+{
+	background-color: #d4e8ff;
+	left: 5px;
+	border: none;
+} 
+.jos-dreapta ul .down
+{
+	border-right: none;
+}

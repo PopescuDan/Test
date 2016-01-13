@@ -1,0 +1,46 @@
+body
+{
+	background-color: #0099CC;
+}
+.tabel
+{
+	background-color: #0099CC;
+ 	padding: 200px 265px;
+ 	font-family: ariel black;
+ 	font-size: 12px;
+}
+th
+{
+	background-color: #00CC99;
+	color: #FFFF00;
+}
+table 
+{
+	border-collapse: collapse;
+	background-color: #00CCCC;
+	margin: 0px;
+}
+table tr:nth-child(2n+1)
+{
+	background-color: #00FFCC!important;
+}
+#sterge
+{
+	color: red;
+	font-size: 100%;
+	width: 100%;
+}
+#tabel 
+{
+	margin: 40px 0 0 50px;
+}
+.buton 
+{
+	border-color: #0099FF;
+	background-color: #0099FF;
+}
+.formular
+{
+	padding: 0px;
+	margin-bottom: 25px;
+}
